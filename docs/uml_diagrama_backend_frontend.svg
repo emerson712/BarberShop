@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+  <style>
+    .cls-box { fill:#fdfdfd; stroke:#333; stroke-width:1.2; }
+    .cls-title { font-family: Arial, sans-serif; font-size:14px; font-weight:bold; }
+    .cls-text { font-family: Arial, sans-serif; font-size:12px; }
+    .cls-pkg { font-family: Arial, sans-serif; font-size:16px; font-weight:bold; }
+    .cls-arrow { stroke:#333; stroke-width:1.2; marker-end:url(#arrow); fill:none; }
+  </style>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L7,3 z" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Backend package -->
+  <rect x="20" y="40" width="620" height="560" fill="#f0f4ff" stroke="#4a6ea9" stroke-width="1.5" rx="8" />
+  <text x="30" y="60" class="cls-pkg">Backend</text>
+
+  <!-- Frontend package -->
+  <rect x="680" y="40" width="400" height="560" fill="#f9f5ff" stroke="#7a4aa9" stroke-width="1.5" rx="8" />
+  <text x="690" y="60" class="cls-pkg">Frontend</text>
+
+  <!-- Backend classes -->
+
+  <!-- Usuario -->
+  <rect x="40" y="90" width="200" height="120" class="cls-box" rx="6" />
+  <text x="50" y="110" class="cls-title">Usuario</text>
+  <text x="50" y="130" class="cls-text">+ id: int</text>
+  <text x="50" y="146" class="cls-text">+ username: string</text>
+  <text x="50" y="162" class="cls-text">+ password_hash: string</text>
+  <text x="50" y="178" class="cls-text">+ nombre: string</text>
+  <text x="50" y="198" class="cls-text">+ findByUsername()</text>
+
+  <!-- Cliente -->
+  <rect x="40" y="240" width="220" height="150" class="cls-box" rx="6" />
+  <text x="50" y="260" class="cls-title">Cliente</text>
+  <text x="50" y="280" class="cls-text">+ id: int</text>
+  <text x="50" y="296" class="cls-text">+ nombre: string</text>
+  <text x="50" y="312" class="cls-text">+ email: string</text>
+  <text x="50" y="328" class="cls-text">+ telefono: string</text>
+  <text x="50" y="344" class="cls-text">+ ciudad: string</text>
+  <text x="50" y="360" class="cls-text">+ all(), find(), create(),</text>
+  <text x="50" y="376" class="cls-text">  update(), delete()</text>
+
+  <!-- AuthController -->
+  <rect x="300" y="90" width="220" height="100" class="cls-box" rx="6" />
+  <text x="310" y="110" class="cls-title">AuthController</text>
+  <text x="310" y="130" class="cls-text">+ login(username, password)</text>
+  <text x="310" y="146" class="cls-text">+ logout()</text>
+
+  <!-- ClienteController -->
+  <rect x="300" y="220" width="250" height="130" class="cls-box" rx="6" />
+  <text x="310" y="240" class="cls-title">ClienteController</text>
+  <text x="310" y="262" class="cls-text">+ listar()</text>
+  <text x="310" y="278" class="cls-text">+ obtener(id)</text>
+  <text x="310" y="294" class="cls-text">+ crear(data)</text>
+  <text x="310" y="310" class="cls-text">+ actualizar(data)</text>
+  <text x="310" y="326" class="cls-text">+ eliminar(id)</text>
+
+  <!-- auth.php API -->
+  <rect x="300" y="390" width="220" height="90" class="cls-box" rx="6" />
+  <text x="310" y="410" class="cls-title">auth.php (API)</text>
+  <text x="310" y="432" class="cls-text">- action=login</text>
+  <text x="310" y="448" class="cls-text">- action=logout</text>
+
+  <!-- clientes.php API -->
+  <rect x="300" y="510" width="260" height="90" class="cls-box" rx="6" />
+  <text x="310" y="530" class="cls-title">clientes.php (API)</text>
+  <text x="310" y="552" class="cls-text">- list, get, create, update, delete</text>
+
+  <!-- Backend arrows -->
+  <line x1="300" y1="120" x2="240" y2="140" class="cls-arrow" />
+  <line x1="300" y1="260" x2="260" y2="300" class="cls-arrow" />
+  <line x1="410" y1="390" x2="410" y2="190" class="cls-arrow" />
+  <line x1="430" y1="510" x2="430" y2="350" class="cls-arrow" />
+
+  <!-- Frontend classes -->
+
+  <!-- login.php -->
+  <rect x="700" y="90" width="220" height="80" class="cls-box" rx="6" />
+  <text x="710" y="110" class="cls-title">login.php</text>
+  <text x="710" y="132" class="cls-text">Formulario de acceso</text>
+  <text x="710" y="148" class="cls-text">AJAX → auth.php?action=login</text>
+
+  <!-- clientes.php page -->
+  <rect x="700" y="210" width="260" height="110" class="cls-box" rx="6" />
+  <text x="710" y="230" class="cls-title">clientes.php (página)</text>
+  <text x="710" y="252" class="cls-text">Tabla DataTables</text>
+  <text x="710" y="268" class="cls-text">AJAX → clientes.php API</text>
+  <text x="710" y="284" class="cls-text">Modales Bootstrap CRUD</text>
+
+  <!-- about.php -->
+  <rect x="700" y="360" width="220" height="70" class="cls-box" rx="6" />
+  <text x="710" y="380" class="cls-title">about.php</text>
+  <text x="710" y="402" class="cls-text">Información de la aplicación</text>
+
+  <!-- navbar.php -->
+  <rect x="700" y="470" width="260" height="90" class="cls-box" rx="6" />
+  <text x="710" y="490" class="cls-title">navbar.php</text>
+  <text x="710" y="512" class="cls-text">Muestra usuario (sesión)</text>
+  <text x="710" y="528" class="cls-text">Botón logout → auth.php?action=logout</text>
+
+  <!-- Frontend arrows towards backend APIs -->
+  <line x1="700" y1="130" x2="520" y2="435" class="cls-arrow" />
+  <line x1="700" y1="250" x2="560" y2="555" class="cls-arrow" />
+  <line x1="700" y1="510" x2="520" y2="435" class="cls-arrow" />
+
+</svg>

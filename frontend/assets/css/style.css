@@ -1,0 +1,110 @@
+/* ==================================================================== */
+/* 1. ESTILOS BASE Y TIPOGRAFÍA */
+/* ==================================================================== */
+body {
+    /* Nueva Fuente: Usamos una fuente clara y un respaldo genérico */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* -------------------------------------------------------------------- */
+/* 2. ESTILOS PARA CONTENIDO GENERAL (Mejora de Legibilidad) */
+/* -------------------------------------------------------------------- */
+
+/* Estilos para el contenedor principal de Clientes, Servicios, etc. */
+.container {
+    padding-top: 20px; /* Margen superior para el contenido debajo del navbar */
+    padding-bottom: 20px;
+}
+
+/* Aseguramos alto contraste para todos los textos que flotan sobre la imagen */
+/* Esto afectará al título (<h3>) y a los textos fuera de la tabla */
+.container,
+.container h3 {
+    color: rgb(196, 242, 255); /* Color de letra blanco */
+    /* Sombra de texto: Crucial para la legibilidad sobre fondos complejos */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9); 
+    font-weight: bold; /* Títulos más pesados */
+}
+
+/* -------------------------------------------------------------------- */
+/* 3. ESTILOS DE LA TABLA DataTables */
+/* -------------------------------------------------------------------- */
+
+/* Damos un fondo semi-transparente y un borde a toda la tabla */
+#tablaClientes,
+#tablaServicios {
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco casi sólido */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+/* Encabezados de la tabla */
+#tablaClientes thead th,
+#tablaServicios thead th {
+    background-color: #343a40; /* Fondo oscuro (como el navbar) */
+    color: white;
+    text-shadow: none; /* Quitamos la sombra aquí */
+}
+
+/* Cuerpo de la tabla (datos) */
+#tablaClientes tbody td,
+#tablaServicios tbody td {
+    color: #333; /* Texto oscuro sobre fondo blanco */
+    text-shadow: none;
+    vertical-align: middle;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+/* -------------------------------------------------------------------- */
+/* 4. ESTILOS DEL LOGIN Y FONDOS DE PÁGINA (Ya implementados) */
+/* -------------------------------------------------------------------- */
+
+/* Propiedades base para el fondo de pantalla completa en todas las páginas con fondo */
+.login-page, 
+.clientes-page, 
+.servicios-page,
+.citas-page {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Fondo de LOGIN */
+.login-page {
+    background-image: url('../img/agendarCita.avif'); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fondo de CLIENTES */
+.clientes-page {
+    background-image: url('../img/servicios.avif'); 
+}
+
+/* Fondo de SERVICIOS */
+.servicios-page {
+    background-image: url('../img/barba.jpg'); 
+}
+
+/* Fondo de CITAS */
+.citas-page {
+    background-image: url('../img/promociones.avif'); 
+}
+
+/* ESTILO DEL CONTENEDOR DEL LOGIN */
+.login-container {
+    width: 100%;
+    max-width: 400px; 
+    padding: 30px;
+    background-color: rgb(210, 207, 207); 
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
